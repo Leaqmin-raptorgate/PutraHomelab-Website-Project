@@ -1,5 +1,5 @@
 <script setup>
-import ArticleCard from '/src/components/cards/articleCards.vue'
+import ArticleCard from '/src/components/cards/articleCard.vue'
 
 //Temporary static data 
 const articles = [

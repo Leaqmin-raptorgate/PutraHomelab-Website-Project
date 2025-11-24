@@ -1,7 +1,7 @@
 export const navItems = [
   { 
     name: 'Articles', 
-    path: '#' 
+    path: '/articles' 
   },
   { 
     name: 'Categories', 
@@ -15,6 +15,6 @@ export const navItems = [
   },
   { 
     name: 'About', 
-    path: '#' 
+    path: '/about' 
   }
 ]

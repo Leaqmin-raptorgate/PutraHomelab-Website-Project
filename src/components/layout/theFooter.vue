@@ -8,7 +8,7 @@
         
         <div class="flex items-center gap-3">
           <img 
-            class="w-70 h-20 object-cover -ml-11 md:w-80" 
+            class="w-70 h-20 object-cover md:-ml-11 md:w-80" 
             src="/src/assets/pictures/logo/logoWeb.png" 
             alt="WebLogo"
             href="/"
@@ -28,6 +28,7 @@
       </div>
 
       <div class="flex items-center gap-4">
+        
         <a href="https://www.youtube.com/@SafetyGMR" class="bg-white text-black p-1.5 rounded-sm hover:bg-slate-200 transition-colors">
           <img class="w-5 h-5"
           src="/src/assets/pictures/logo_social/youtube.svg" 
@@ -46,6 +47,7 @@
           src="/src/assets/pictures/logo_social/linkedin.svg" 
           alt="LinkedIn Icon" />
         </a>  
+
       </div>
 
     </div>

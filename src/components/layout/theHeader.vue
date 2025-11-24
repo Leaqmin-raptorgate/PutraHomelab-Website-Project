@@ -1,6 +1,7 @@
 <script setup>
 import { navItems } from '@/assets/data/dropdownData.js'
 import NavBarItem from '@/components/layout/dropdown.vue'
+import router from '../router';
 </script>
 
 <template>
@@ -8,11 +9,13 @@ import NavBarItem from '@/components/layout/dropdown.vue'
 
     <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
       
-      <img 
-        class="w-38 h-auto -ml-6 md:w-44" 
-        src="/src/assets/pictures/logo/logoWeb.png" 
-        alt="WebLogo" 
-      />
+      <router-link to="/">
+        <img 
+          class="w-38 h-auto -ml-6 md:w-44" 
+          src="/src/assets/pictures/logo/logoWeb.png" 
+          alt="WebLogo" 
+        />
+      </router-link>
 
       <nav class="hidden md:flex items-center gap-8 h-full">
         <NavBarItem 

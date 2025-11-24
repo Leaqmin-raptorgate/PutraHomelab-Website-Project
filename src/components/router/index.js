@@ -2,13 +2,24 @@
 // Provides routes for the home view and a 404 catch-all.
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/components/view/homeView.vue'
-// import NotFoundView from '@components/view/.vue'
+import AboutView from '@/components/view/aboutView.vue'
+import ArticleView from '@/components/view/articleView.vue'
 
 const routes = [
 	{
 		path: '/',
 		name: 'Home',
 		component: HomeView,
+	},
+	{
+		path: '/about',
+		name: 'About',
+		component: AboutView,
+	},
+	{
+		path: '/articles',
+		name: 'Articles',
+		component: ArticleView,
 	},
 	{
 		// // catch-all 404 route for unknown paths
