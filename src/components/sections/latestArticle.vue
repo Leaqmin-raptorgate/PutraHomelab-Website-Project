@@ -34,10 +34,10 @@ const articles = [
   <section class="max-w-6xl mx-auto px-6 py-20">
     
     <div class="flex items-end justify-between mb-8">
-      <h2 class="text-3xl font-bold font-mono italic text-white">
+      <h2 class="text-2xl md:text-3xl font-bold font-mono italic text-white">
         Latest Articles <span class="text-red-500 animate-pulse">.</span>
       </h2>
-      <a href="#" class="text-sm font-mono text-slate-400 hover:text-white mb-1">
+      <a href="#" class="text-xs md:text-base text-sm font-mono text-slate-400 hover:text-white mb-1 ">
         View All >
       </a>
     </div>

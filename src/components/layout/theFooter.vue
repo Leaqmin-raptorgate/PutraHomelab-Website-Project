@@ -1,8 +1,10 @@
 <template>
   <footer class="w-full bg-[#1e293b] text-slate-400 border-t border-slate-700/50 mt-auto">
-    <div class="max-w-6xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-0">
+    <div class="max-w-6xl mx-auto px-6 py-12 flex flex-col justify-between items-center gap-8
+                md:flex-row md:gap-0">
 
-      <div class="flex flex-col items-center md:items-start text-center md:text-left space-y-4 max-w-sm">
+      <div class="flex flex-col items-center text-center space-y-4 max-w-sm
+                  md:text-left md:items-start">
         
         <div class="flex items-center gap-3">
           <img 
@@ -20,7 +22,8 @@
         </p>
       </div>
 
-      <div class="font-mono text-sm font-bold opacity-60 md:absolute md:left-1/2 md:-translate-x-1/2 ml-1">
+      <div class="font-mono text-sm font-bold opacity-60 md:absolute 
+                  md:left-1/2 md:-translate-x-1/2 ml-1">
         since 2025
       </div>
 

@@ -1,5 +1,6 @@
-<script>
-//JS script placeholder
+<script setup>
+import { navItems } from '@/assets/data/dropdownData.js'
+import NavBarItem from '@/components/layout/dropdown.vue'
 </script>
 
 <template>
@@ -8,15 +9,17 @@
     <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
       
       <img 
-      class="w-38 h-auto -ml-6 md:w-44" 
-      src="/src/assets/pictures/logo/logoWeb.png" 
-      alt="WebLogo" 
+        class="w-38 h-auto -ml-6 md:w-44" 
+        src="/src/assets/pictures/logo/logoWeb.png" 
+        alt="WebLogo" 
       />
 
-      <nav class="text-slate-400 font-mono text-sm hidden md:flex gap-6">
-        <a href="#" class="hover:text-white transition-colors">Articles</a>
-        <a href="#" class="hover:text-white transition-colors">Categories ></a>
-        <a href="#" class="hover:text-white transition-colors">About</a>
+      <nav class="hidden md:flex items-center gap-8 h-full">
+        <NavBarItem 
+          v-for="nav in navItems" 
+          :key="nav.name" 
+          :item="nav" 
+        />
       </nav>
 
       <button class="text-white md:hidden">

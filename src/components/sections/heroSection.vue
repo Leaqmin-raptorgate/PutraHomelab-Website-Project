@@ -12,7 +12,8 @@
           This is a placeholder for the hero section content. You can add your introduction, tagline, or any other relevant information here to engage your visitors.
         </p>
 
-        <button class="mt-4 px-8 py-3 border border-slate-600 text-slate-300 rounded hover:bg-white hover:text-black hover:border-white transition-all duration-300 cursor-pointer font-mono text-sm">
+        <button class="mt-4 px-8 py-3 border border-slate-600 text-slate-300 rounded hover:bg-white 
+                        hover:text-black hover:border-white transition-all duration-300 cursor-pointer font-mono text-sm">
           Get Started
         </button>
       </div>
