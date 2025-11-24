@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  /* Your Figma Fonts */
+  --font-mono: "JetBrains Mono", "Courier New", monospace;
+  --font-sans: "JetBrains Mono", "Segoe UI", sans-serif;
+
+  /* Your Figma Colors (Approximation) */
+  --color-lab-bg: #1e202e;   /* The dark navy background */
+  --color-lab-card: #F5F5F5; /* The white/off-white cards */
+  --color-lab-accent: #38bdf8; /* Cyan/Blue accent */
+}
+
+/* Global Reset for Dark Theme */
+body {
+  background-color: var(--color-lab-bg);
+  color: white;
+  font-family: var(--font-mono); /* Defaulting to mono as per your design */
+}
