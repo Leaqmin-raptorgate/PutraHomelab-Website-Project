@@ -7,9 +7,11 @@
 
     <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
       
-      <div class="text-white font-bold font-mono text-xl tracking-wider">
-        >_ PUTRA
-      </div>
+      <img 
+      class="w-38 h-auto -ml-6 md:w-44" 
+      src="/src/assets/pictures/logo/logoWeb.png" 
+      alt="PUTRA Logo" 
+      />
 
       <nav class="text-slate-400 font-mono text-sm hidden md:flex gap-6">
         <a href="#" class="hover:text-white transition-colors">Articles</a>
