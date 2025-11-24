@@ -5,11 +5,12 @@
       <div class="flex flex-col items-center md:items-start text-center md:text-left space-y-4 max-w-sm">
         
         <div class="flex items-center gap-3">
-          <span class="text-3xl font-mono font-bold text-white tracking-tighter">>_</span>
-          <div class="flex flex-col leading-none">
-            <span class="text-xl font-bold font-mono text-white tracking-wide">PUTRA</span>
-            <span class="text-[10px] text-slate-400 font-mono">@Homelab.org</span>
-          </div>
+          <img 
+            class="w-70 h-20 object-cover -ml-11 md:w-80" 
+            src="/src/assets/pictures/logo/logoWeb.png" 
+            alt="WebLogo"
+            href="/"
+          />
         </div>
 
         <p class="text-xs font-mono leading-relaxed opacity-70">
@@ -19,7 +20,7 @@
         </p>
       </div>
 
-      <div class="font-mono text-sm font-bold opacity-60 md:absolute md:left-1/2 md:-translate-x-1/2 ">
+      <div class="font-mono text-sm font-bold opacity-60 md:absolute md:left-1/2 md:-translate-x-1/2 ml-1">
         since 2025
       </div>
 

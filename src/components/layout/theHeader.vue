@@ -10,7 +10,7 @@
       <img 
       class="w-38 h-auto -ml-6 md:w-44" 
       src="/src/assets/pictures/logo/logoWeb.png" 
-      alt="PUTRA Logo" 
+      alt="WebLogo" 
       />
 
       <nav class="text-slate-400 font-mono text-sm hidden md:flex gap-6">

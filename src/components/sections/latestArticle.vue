@@ -1,8 +1,7 @@
 <script setup>
 import ArticleCard from '/src/components/cards/articleCards.vue'
 
-// This is our "Fake Database"
-// In the future, this might come from an API or Markdown files
+//Temporary static data 
 const articles = [
   { 
     id: 1, 
