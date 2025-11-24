@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <header class="w-full bg-[#1e293b] border-b border-slate-700/50 sticky top-0 z-50">
+  <header class="w-full bg-[#1e293b] border-b border-slate-700/50 sticky top-0 z-50 shadow-xl shadow-black/10">
 
     <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
       

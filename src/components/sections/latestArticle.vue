@@ -23,7 +23,7 @@ const articles = [
   },
   { 
     id: 4, 
-    category: 'Docker', 
+    category: 'Linux', 
     title: 'Self-hosting Nextcloud: A tragedy in 3 acts', 
     date: '2025-11-10' 
   }
