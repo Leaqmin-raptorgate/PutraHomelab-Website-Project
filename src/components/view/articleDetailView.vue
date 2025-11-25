@@ -23,7 +23,8 @@ const article = {
   <div class="max-w-7xl mx-auto px-6 md:px-22 py-20 min-h-screen">
     
     <header class="text-center max-w-3xl mx-auto mb-16 space-y-6">
-      <RouterLink to="/articles" class="inline-flex items-center gap-2 text-slate-500 hover:text-white font-mono text-xs mb-4 transition-colors">
+      <RouterLink to="/articles" class="inline-flex items-center gap-2 text-slate-500 hover:text-white 
+                                        font-mono text-xs mb-4 transition-colors">
         &lt;- Back to Articles
       </RouterLink>
 
