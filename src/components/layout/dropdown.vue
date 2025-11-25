@@ -12,12 +12,12 @@ defineProps({
     
     <a :href="item.path" class="text-slate-400 font-mono text-sm hover:text-white 
                                 transition-colors flex items-center gap-1">
-      {{ item.name }}
+        {{ item.name }}
       
       <span 
         v-if="item.children" 
         class="text-[10px] transition-transform duration-200 group-hover:rotate-180 "
-      >
+        >
         ▲
       </span>
     </a>

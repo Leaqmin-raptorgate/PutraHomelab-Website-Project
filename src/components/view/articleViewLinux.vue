@@ -12,21 +12,21 @@ const allArticles = [
   },
   { 
     id: 2, 
-    category: 'Hardware', 
+    category: 'Linux', 
     title: 'Building a silent Home Server', 
     excerpt: 'Fan curves, undervolting, and choosing the right case for a server that sleeps in your bedroom.', 
     date: '18-11-2025' 
   },
   { 
     id: 3, 
-    category: 'Docker', 
+    category: 'Linux', 
     title: 'Containerizing your life', 
     excerpt: 'How to move your entire digital footprint into portable containers and never look back.', 
     date: '15-11-2025' 
   },
   { 
     id: 4, 
-    category: 'Network', 
+    category: 'Linux', 
     title: 'The basics of Subnetting', 
     excerpt: 'It is actually easier than you think. Here is a guide to organizing your home IP addresses.', 
     date: '10-11-2025' 
@@ -40,7 +40,7 @@ const allArticles = [
     <div>
 
         <h1 class="text-4xl md:text-5xl font-bold font-mono italic tracking-tighter leading-tight text-white">
-            # Article section 
+            # Article Linux section 
         </h1>
 
         <h2 class="text-slate-400 font-mono text-sm md:text-base mt-2 mb-8">

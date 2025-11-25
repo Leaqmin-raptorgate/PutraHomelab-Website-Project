@@ -7,25 +7,29 @@ const articles = [
     id: 1, 
     category: 'Linux', 
     title: 'Why I switched to Debian Stable', 
-    date: '2025-11-20' 
+    date: '2025-11-20' ,
+    iconName: 'linux'
   },
   { 
     id: 2, 
     category: 'Hardware', 
     title: 'Lenovo M720T: The Perfect Home Server?', 
-    date: '2025-11-18' 
+    date: '2025-11-18',
+    iconName: 'hardware'
   },
   { 
     id: 3, 
     category: 'Network', 
     title: 'Understanding VLANs without a degree', 
-    date: '2025-11-15' 
+    date: '2025-11-15',
+    iconName: 'network'
   },
   { 
     id: 4, 
-    category: 'Linux', 
+    category: 'self-hosting', 
     title: 'Self-hosting Nextcloud: A tragedy in 3 acts', 
-    date: '2025-11-10' 
+    date: '2025-11-10',
+    iconName: 'self-hosting'
   }
 ]
 </script>
@@ -37,7 +41,7 @@ const articles = [
       <h2 class="text-2xl md:text-3xl font-bold font-mono italic text-white">
         Latest Articles <span class="text-red-500 animate-pulse">.</span>
       </h2>
-      <a href="#" class="text-xs md:text-base text-sm font-mono text-slate-400 hover:text-white mb-1 ">
+      <a href="/articles" class="text-xs md:text-base text-sm font-mono text-slate-400 hover:text-white mb-1 ">
         View All >
       </a>
     </div>
@@ -45,11 +49,13 @@ const articles = [
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       
       <ArticleCard 
-        v-for="item in articles" 
+        v-for="item in articles"
         :key="item.id"
+        :image="item.image || ''"
         :category="item.category"
         :title="item.title"
         :date="item.date"
+        :icon-name="item.iconName"
       />
 
     </div>

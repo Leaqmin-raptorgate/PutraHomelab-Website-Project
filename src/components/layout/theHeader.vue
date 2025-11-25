@@ -1,7 +1,7 @@
 <script setup>
 import { navItems } from '@/assets/data/dropdownData.js'
 import NavBarItem from '@/components/layout/dropdown.vue'
-import router from '../router';
+import { RouterLink } from 'vue-router';
 </script>
 
 <template>

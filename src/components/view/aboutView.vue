@@ -1,6 +1,6 @@
 <script setup>
-// Import your image here (or use a placeholder)
-import bioImage from '@/assets/pictures/elaina chill 1.png' 
+import bioImage from '@/assets/pictures/elaina chill 1.png'
+import { RouterLink } from 'vue-router'; 
 </script>
 
 <template>

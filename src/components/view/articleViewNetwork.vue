@@ -5,21 +5,21 @@ import ArticleRow from '../cards/articleRow.vue'
 const allArticles = [
   { 
     id: 1, 
-    category: 'Linux', 
+    category: 'Network', 
     title: 'Why I switched to Debian Stable', 
     excerpt: 'Lorem ipsum dolor amet tolong siapa disini makan ayam goreng berlapis lapis kayak ketabrak truck kun.', 
     date: '20-11-2025' 
   },
   { 
     id: 2, 
-    category: 'Hardware', 
+    category: 'Network', 
     title: 'Building a silent Home Server', 
     excerpt: 'Fan curves, undervolting, and choosing the right case for a server that sleeps in your bedroom.', 
     date: '18-11-2025' 
   },
   { 
     id: 3, 
-    category: 'Docker', 
+    category: 'Network', 
     title: 'Containerizing your life', 
     excerpt: 'How to move your entire digital footprint into portable containers and never look back.', 
     date: '15-11-2025' 
@@ -40,7 +40,7 @@ const allArticles = [
     <div>
 
         <h1 class="text-4xl md:text-5xl font-bold font-mono italic tracking-tighter leading-tight text-white">
-            # Article section 
+            # Article Network section 
         </h1>
 
         <h2 class="text-slate-400 font-mono text-sm md:text-base mt-2 mb-8">
