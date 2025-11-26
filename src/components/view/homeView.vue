@@ -5,7 +5,7 @@ import latestArticle from '@/components/sections/latestArticle.vue';
 </script>
 
 <template>
-    <main class="min-h-screen bg-[#1e202e] text-white space-y-12 pb-20 flex">
+    <main class="text-white space-y-12 pb-20 flex">
       <heroSection />
     </main>
     <main> 
