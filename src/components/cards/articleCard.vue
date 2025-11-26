@@ -1,6 +1,7 @@
 <script setup>
 // Define what data this card needs to receive from the parent
 defineProps({
+  id: Number,
   category: String,
   title: String,
   date: String,
@@ -22,38 +23,41 @@ const iconMap = {
 </script>
 
 <template>
-    <div class="lab-card 
-                group flex flex-col h-full 
-                p-6">
-    
-    <div class="flex items-center gap-3 mb-4">
-        <div class="lab-icon-circle 
-                    bg-blue-600 shadow-blue-900/20">
+    <RouterLink
+        :to="`/post/${id}`"
+    >
+        <div class="lab-card 
+                    group flex flex-col h-full 
+                    p-6">
+        
+            <div class="flex items-center gap-3 mb-4">
+                <div class="lab-icon-circle 
+                            bg-blue-600 shadow-blue-900/20">
 
-            <img 
-              v-if="iconMap[iconName]" 
-              :src="iconMap[iconName]" 
-              alt="" 
-              class="w-auto h-5" 
-            />
-            <span v-else class="text-[10px]">{{ category ? category.charAt(0) : '' }}</span>
+                    <img 
+                    v-if="iconMap[iconName]" 
+                    :src="iconMap[iconName]" 
+                    alt="" 
+                    class="w-auto h-5" 
+                    />
+                    <span v-else class="text-[10px]">{{ category ? category.charAt(0) : '' }}</span>
+                </div>
+            
+                <span class="lab-badge text-blue-400">
+                    {{ category }}
+                </span>
+            </div>
+
+            <h3 class="text-xl font-bold font-mono italic text-white mb-2 leading-tight
+                    group-hover:text-blue-300 transition-colors">
+                {{ title }}
+            </h3>
+
+            <div class="mt-auto pt-6 border-t border-slate-700/50">
+                <span class="text-xs font-mono text-slate-500">
+                    Posted: {{ date }}
+                </span>
+            </div>
         </div>
-      
-        <span class="lab-badge text-blue-400">
-            {{ category }}
-        </span>
-    </div>
-
-    <h3 class="text-xl font-bold font-mono italic text-white mb-2 leading-tight
-             group-hover:text-blue-300 transition-colors">
-        {{ title }}
-    </h3>
-
-    <div class="mt-auto pt-6 border-t border-slate-700/50">
-        <span class="text-xs font-mono text-slate-500">
-            Posted: {{ date }}
-        </span>
-    </div>
-
-  </div>
+    </RouterLink>
 </template>

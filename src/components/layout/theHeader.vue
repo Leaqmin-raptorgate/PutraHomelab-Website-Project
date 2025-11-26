@@ -1,24 +1,17 @@
 <script setup>
 import { ref } from 'vue'
 import { RouterLink } from 'vue-router'
-import { navItems } from '@/assets/data/dropdownData.js'
+// Ensure this path matches where you kept your data
+import { navItems } from '@/assets/data/dropdownData.js' 
 import NavBarItem from '@/components/layout/dropdown.vue'
-// 1. STATE: Tracks if the mobile menu is visible
+
 const isMobileMenuOpen = ref(false)
 
-// 2. ACTION: Toggles the state
 const toggleMenu = () => {
   isMobileMenuOpen.value = !isMobileMenuOpen.value
-  
-  // Optional: Stop background scrolling when menu is open
-  if (isMobileMenuOpen.value) {
-    document.body.style.overflow = 'hidden'
-  } else {
-    document.body.style.overflow = 'auto'
-  }
+  document.body.style.overflow = isMobileMenuOpen.value ? 'hidden' : 'auto'
 }
 
-// 3. ACTION: Close menu when a link is clicked
 const closeMenu = () => {
   isMobileMenuOpen.value = false
   document.body.style.overflow = 'auto'
@@ -80,6 +73,7 @@ const closeMenu = () => {
                 :to="item.path" 
                 class="text-2xl font-bold font-mono text-white block border-b border-slate-700/50 pb-2"
                 @click="closeMenu"
+                active-class="text-white"
               >
                 {{ item.name }}
               </RouterLink>
@@ -90,6 +84,7 @@ const closeMenu = () => {
                   :key="child.name"
                   :to="child.path"
                   class="text-slate-400 font-mono text-sm hover:text-blue-400 transition-colors"
+                  active-class="text-white"
                   @click="closeMenu"
                 >
                   {{ child.name }}
