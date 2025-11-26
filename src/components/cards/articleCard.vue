@@ -22,12 +22,13 @@ const iconMap = {
 </script>
 
 <template>
-    <div class="group bg-[#1e293b] border border-slate-700/50 p-6 rounded-xl hover:bg-slate-800 
-                hover:border-slate-600 transition-all duration-300 cursor-pointer flex flex-col h-full">
+    <div class="lab-card 
+                group flex flex-col h-full 
+                p-6">
     
     <div class="flex items-center gap-3 mb-4">
-        <div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs font-bold 
-                    shadow-lg shadow-blue-900/20 group-hover:scale-110 transition-transform">
+        <div class="lab-icon-circle 
+                    bg-blue-600 shadow-blue-900/20">
 
             <img 
               v-if="iconMap[iconName]" 
@@ -38,12 +39,13 @@ const iconMap = {
             <span v-else class="text-[10px]">{{ category ? category.charAt(0) : '' }}</span>
         </div>
       
-        <span class="font-mono text-xs text-blue-400 font-bold tracking-wide uppercase">
+        <span class="lab-badge text-blue-400">
             {{ category }}
         </span>
     </div>
 
-    <h3 class="text-xl font-bold font-mono italic text-white mb-2 leading-tight group-hover:text-blue-300 transition-colors">
+    <h3 class="text-xl font-bold font-mono italic text-white mb-2 leading-tight
+             group-hover:text-blue-300 transition-colors">
         {{ title }}
     </h3>
 

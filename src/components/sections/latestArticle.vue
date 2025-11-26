@@ -35,18 +35,28 @@ const articles = [
 </script>
 
 <template>
-  <section class="max-w-6xl mx-auto px-6 py-20 overflow-hidden">
+  <section class="lab-section overflow-hidden">
     
     <div class="flex items-end justify-between mb-8">
-      <h2 class="text-2xl md:text-3xl font-bold font-mono italic text-white">
+
+      <h2 class="lab-h1 text-2xl md:text-3xl">
         Latest Articles <span class="text-red-500 animate-pulse">.</span>
       </h2>
-      <a href="/articles" class="text-xs md:text-base text-sm font-mono text-slate-400 hover:text-white mb-1 ">
+
+      <a href="/articles" class= "mb-1
+                                  font-mono text-sm md:text-base 
+                                text-slate-400 
+                                hover:text-white">
         View All >
       </a>
+
     </div>
 
-    <div class="flex gap-6 overflow-x-auto pb-8 snap-x snap-mandatory -mx-6 px-6 md:mx-0 md:px-0 scrollbar-hide">
+    <div class=  "-mx-6 px-6 gap-6 flex 
+                  overflow-x-auto pb-8 
+                  snap-x snap-mandatory 
+                  md:mx-0 md:px-0
+                  scrollbar-hide">
         <div 
         v-for="item in articles"
         :key="item.id"

@@ -5,10 +5,10 @@ import latestArticle from '@/components/sections/latestArticle.vue';
 </script>
 
 <template>
-    <main class="text-white space-y-12 pb-20 flex">
+    <main class="text-white flex">
       <heroSection />
     </main>
-    <main> 
+    <body> 
 
       <latestArticle />
 
@@ -20,6 +20,6 @@ import latestArticle from '@/components/sections/latestArticle.vue';
         This is a placeholder for the feature section content. You can describe a specific feature, service, or case study here to highlight its importance and engage your audience.
       </featureSection>
 
-    </main>
+    </body>
 
 </template>

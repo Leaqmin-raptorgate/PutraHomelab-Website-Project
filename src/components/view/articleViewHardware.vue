@@ -36,10 +36,10 @@ const allArticles = [
 </script>
 
 <template>
-  <div class="max-w-4xl mx-auto px-6 py-20 min-h-screen">
+  <div class="lab-article-section">
     <div>
 
-        <h1 class="text-4xl md:text-5xl font-bold font-mono italic tracking-tighter leading-tight text-white">
+        <h1 class="lab-h1 text-3xl md:text-5xl">
             # Article Hardware section 
         </h1>
 

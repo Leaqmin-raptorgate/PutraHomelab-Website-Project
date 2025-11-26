@@ -11,7 +11,7 @@ defineProps({
 </script>
 
 <template>
-  <section class="max-w-6xl mx-auto px-6 py-20">
+  <section class="lab-section">
     
     <div 
       class="flex flex-col-reverse items-center gap-12 md:gap-20"
@@ -19,11 +19,12 @@ defineProps({
     >
       
       <div class="w-full md:w-1/2 space-y-6">
-        <div class="text-blue-400 font-mono text-xs font-bold tracking-widest uppercase">
+        <div class="lab-badge text-blue-400">
           {{ subtitle }}
         </div>
         
-        <h2 class="text-3xl md:text-4xl font-bold font-mono italic text-white leading-tight">
+        <h2 class="lab-h1 text-3xl
+                    md:text-4xl">
           {{ title }}
         </h2>
         
@@ -31,8 +32,10 @@ defineProps({
           <slot />
         </p>
 
-        <a href="#" class="inline-block border-b border-blue-400 text-blue-400 pb-1 hover:text-white
-                            hover:border-white transition-colors text-sm font-mono">
+        <a href="#" class= "inline-block border-b 
+                            text-sm font-mono
+                          border-blue-400 text-blue-400 pb-1 
+                          hover:text-white hover:border-white transition-colors">
           Read Case Study >
         </a>
       </div>

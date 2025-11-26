@@ -45,8 +45,9 @@ const article = {
       
       <article class="lg:col-span-3 space-y-8 text-slate-300 font-sans leading-loose text-lg">
         
-        <div id="intro">
-          <h2 class="text-2xl font-bold font-mono text-white mb-4 italic">Introduction</h2>
+        <div>
+          <h2 class="text-2xl font-bold font-mono text-white mb-4 italic"
+              id="intro">Introduction</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis 
             convallis tempus leo eu aenean. Iaculis massa nisl malesuada lacinia integer 
