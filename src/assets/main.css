@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-lab-bg: #1e202e; /* Dark Blueish Background */
+  --color-lab-surface: #1e293b; /* Darker Surface for Cards and Sections */
+  --color-lab-accent: #2563eb; /* Bright Blue Accent Color */
+
+  --font-display: "JetBrains Mono", monospace;
+}
+
+body {
+  background-color: var(--color-lab-bg);
+  color: white;
+  font-family: var(--font-display);
+}
+
+@layer components {
+  
+  
+  /* 1. Standard Container (Used in Hero, Features, LatestArticles) */
+  .lab-section {
+    @apply max-w-6xl mx-auto px-6 py-20;
+  }
+
+  /* 2. Card Base Style (Used in ArticleCard & ArticleRow) */
+  .lab-card {
+    @apply bg-[var(--color-lab-surface)] border border-slate-700/50 rounded-xl 
+           transition-all duration-300 cursor-pointer
+           hover:bg-slate-800 hover:border-slate-600 hover:shadow-xl;
+  }
+
+  /* 3. Icon Circle (The Red/Blue circle) */
+  .lab-icon-circle {
+    @apply w-8 h-8 rounded-full flex items-center justify-center 
+           text-white text-xs font-bold shadow-lg 
+           transition-transform duration-300 group-hover:scale-110;
+  }
+
+  /* 4. Typography Tokens */
+  .lab-badge {
+    @apply font-mono text-xs font-bold tracking-wide uppercase;
+  }
+
+  .lab-h1 {
+    @apply text-4xl md:text-6xl font-bold font-mono italic tracking-tighter leading-tight text-white;
+  }
+
+  /* Specific needs */
+  /* Article Container Section */
+  .lab-article-section {
+    @apply max-w-4xl mx-auto px-6 py-20;
+
+  }
+}
