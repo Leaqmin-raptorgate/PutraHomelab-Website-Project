@@ -19,7 +19,9 @@
         </button>
       </div>
 
-      <div class="md:justify flex w-full justify-center md:w-1/2">
+      <div
+        class="md:justify flex w-full justify-center md:w-1/2 md:justify-end"
+      >
         <img
           src="/src/assets/pictures/elaina chill 1.png"
           alt="Elaina Chilling"

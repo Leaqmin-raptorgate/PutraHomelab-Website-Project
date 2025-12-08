@@ -37,7 +37,7 @@ defineProps({
         </a>
       </div>
 
-      <div class="flex w-full justify-center md:w-1/2">
+      <div class="flex w-full justify-center md:w-1/2 md:justify-end">
         <div
           class="group relative flex aspect-video w-full max-w-md items-center justify-center overflow-hidden rounded-xl border border-slate-700/50 bg-slate-800"
         >

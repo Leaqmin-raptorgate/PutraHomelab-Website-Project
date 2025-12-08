@@ -8,6 +8,18 @@ defineProps({
   image: String,
   iconName: String
 })
+
+import linuxIcon from '/src/assets/pictures/logo_social/linux-brands.svg'
+import hardwareIcon from '/src/assets/pictures/logo_social/computer.svg'
+import selfhostIcon from '/src/assets/pictures/logo_social/server.svg'
+import networkIcon from '/src/assets/pictures/logo_social/network.svg'
+
+const iconMap = {
+  linux: linuxIcon,
+  hardware: hardwareIcon,
+  'self-hosting': selfhostIcon,
+  network: networkIcon
+}
 </script>
 
 <template>
@@ -17,7 +29,17 @@ defineProps({
     <div class="relative w-full overflow-hidden bg-slate-800 md:w-1/3">
       <div
         class="lab-icon-circle absolute top-4 left-4 bg-blue-600 shadow-lg shadow-blue-900/20"
-      ></div>
+      >
+        <img
+          v-if="iconMap[iconName]"
+          :src="iconMap[iconName]"
+          alt=""
+          class="h-5 w-auto"
+        />
+        <span v-else class="text-[10px]">{{
+          category ? category.charAt(0) : ''
+        }}</span>
+      </div>
 
       <img
         v-if="image"

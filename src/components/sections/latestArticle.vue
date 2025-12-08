@@ -1,37 +1,6 @@
 <script setup>
 import ArticleCard from '/src/components/cards/articleCard.vue'
-
-//Temporary static data
-const articles = [
-  {
-    id: 1,
-    category: 'Linux',
-    title: 'Why I switched to Debian Stable',
-    date: '2025-11-20',
-    iconName: 'linux'
-  },
-  {
-    id: 2,
-    category: 'Hardware',
-    title: 'Lenovo M720T: The Perfect Home Server?',
-    date: '2025-11-18',
-    iconName: 'hardware'
-  },
-  {
-    id: 3,
-    category: 'Network',
-    title: 'Understanding VLANs without a degree',
-    date: '2025-11-15',
-    iconName: 'network'
-  },
-  {
-    id: 4,
-    category: 'self-hosting',
-    title: 'Self-hosting Nextcloud: A tragedy in 3 acts',
-    date: '2025-11-10',
-    iconName: 'self-hosting'
-  }
-]
+import { articles } from '/src/assets/data/articles.js'
 </script>
 
 <template>

@@ -31,6 +31,11 @@ body {
     @apply flex h-8 w-8 items-center justify-center rounded-full text-xs font-bold text-white shadow-lg transition-transform duration-300 group-hover:scale-110;
   }
 
+  /*buttons*/
+  .lab-button {
+    @apply cursor-pointer rounded border border-slate-600 px-8 py-3 font-mono text-sm text-slate-300 transition-all duration-300 hover:border-white hover:bg-white hover:text-black hover:shadow-2xl;
+  }
+
   /* 4. Typography Tokens */
   .lab-badge {
     @apply font-mono text-xs font-bold tracking-wide uppercase;
@@ -41,8 +46,8 @@ body {
   }
 
   /* Specific needs */
-  /* Article Container Section */
-  .lab-article-section {
-    @apply mx-auto max-w-4xl px-6 py-20;
+  /* Header, Dropdown Menu upon selection */
+  .lab-header-dropdown-selection-btn {
+    @apply border-l-2 border-transparent px-4 py-3 font-mono text-xs text-slate-400 transition-colors hover:border-blue-400 hover:bg-slate-800 hover:text-white;
   }
 }

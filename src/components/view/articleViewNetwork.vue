@@ -39,7 +39,7 @@ const allArticles = [
 </script>
 
 <template>
-  <div class="lab-article-section">
+  <div class="lab-section">
     <div>
       <h1 class="lab-h1 text-3xl md:text-5xl"># Article Network section</h1>
 

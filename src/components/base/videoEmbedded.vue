@@ -1,9 +1,8 @@
 <script setup>
 defineProps({
-  url: String // standard Youtube URL
+  url: String
 })
 
-// Helper to extract ID from URL (Simple version)
 const getEmbedUrl = (url) => {
   const videoId = url.split('v=')[1] || url.split('/').pop()
   return `https://www.youtube.com/embed/${videoId}`

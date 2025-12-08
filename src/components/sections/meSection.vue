@@ -1,4 +1,4 @@
-<script>
+<script setup>
 import bioImage from '/src/assets/pictures/elaina chill 1.png'
 </script>
 <template>
