@@ -75,7 +75,7 @@ import bioImage from '@/assets/pictures/elaina chill 1.png'
       <div
         class="mx-auto flex max-w-4xl flex-col items-center gap-10 md:flex-row"
       >
-        <div class="group relative flex-shrink-0">
+        <div class="group relative shrink-0">
           <div
             class="absolute inset-0 transform rounded-full bg-blue-600/20 blur-xl transition-all duration-500 group-hover:bg-blue-600/30"
           ></div>

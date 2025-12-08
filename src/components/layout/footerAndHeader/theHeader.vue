@@ -1,7 +1,8 @@
 <script setup>
 import { ref } from 'vue'
 import { RouterLink } from 'vue-router'
-import { navItems } from '@/assets/data/dropdownData.js'
+import dropdownSection from '@/components/sections/dropdownSection.vue'
+
 // 1. STATE: Tracks if the mobile menu is visible
 const isMobileMenuOpen = ref(false)
 
@@ -26,7 +27,7 @@ const closeMenu = () => {
 
 <template>
   <header
-    class="sticky top-0 z-50 w-full border-b border-slate-700/50 bg-[#1e293b] shadow-xl shadow-black/40"
+    class="sticky top-0 z-50 w-full border-b border-slate-700/50 bg-lab-surface shadow-xl shadow-black/40"
   >
     <div class="mx-auto flex h-20 max-w-6xl items-center justify-between px-6">
       <div class="relative z-50 flex items-center gap-3">
@@ -73,38 +74,7 @@ const closeMenu = () => {
               />
             </svg>
           </span>
-
-          <div
-            class="invisible absolute top-full left-0 w-48 translate-y-2 rounded-b-md border border-slate-700 bg-[#1e293b] opacity-0 shadow-xl transition-all duration-200 ease-out group-hover:visible group-hover:translate-y-0 group-hover:opacity-100"
-          >
-            <div class="flex flex-col py-2">
-              <RouterLink
-                to="/articles/linux"
-                class="border-l-2 border-transparent px-4 py-3 font-mono text-xs text-slate-400 transition-colors hover:border-blue-400 hover:bg-slate-800 hover:text-white"
-                >Linux
-              </RouterLink>
-              <RouterLink
-                to="/articles/hardware"
-                class="border-l-2 border-transparent px-4 py-3 font-mono text-xs text-slate-400 transition-colors hover:border-blue-400 hover:bg-slate-800 hover:text-white"
-                >Hardware</RouterLink
-              >
-              <RouterLink
-                to="/articles/network"
-                class="border-l-2 border-transparent px-4 py-3 font-mono text-xs text-slate-400 transition-colors hover:border-blue-400 hover:bg-slate-800 hover:text-white"
-                >Network</RouterLink
-              >
-              <RouterLink
-                to="/articles/self-hosting"
-                class="border-l-2 border-transparent px-4 py-3 font-mono text-xs text-slate-400 transition-colors hover:border-blue-400 hover:bg-slate-800 hover:text-white"
-                >Self-Hosting</RouterLink
-              >
-              <RouterLink
-                to="/study-cases"
-                class="border-l-2 border-transparent px-4 py-3 font-mono text-xs text-slate-400 transition-colors hover:border-blue-400 hover:bg-slate-800 hover:text-white"
-                >Study Cases</RouterLink
-              >
-            </div>
-          </div>
+          <dropdownSection />
         </div>
 
         <RouterLink
@@ -159,7 +129,7 @@ const closeMenu = () => {
       >
         <div
           v-if="isMobileMenuOpen"
-          class="fixed inset-0 overflow-y-auto bg-[#1e293b] px-6 pt-24 md:hidden"
+          class="fixed inset-0 overflow-y-auto bg-lab-surface px-6 pt-24 md:hidden"
         >
           <nav class="flex flex-col space-y-6">
             <RouterLink
