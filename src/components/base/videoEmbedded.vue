@@ -11,14 +11,23 @@ const getEmbedUrl = (url) => {
 </script>
 
 <template>
-  <div class="w-full aspect-video rounded-xl overflow-hidden shadow-lg border border-slate-700/50 my-8">
-    <iframe 
-      :src="getEmbedUrl(url)" 
-      title="YouTube video player" 
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  <div
+    class="my-8 aspect-video w-full overflow-hidden rounded-xl border border-slate-700/50 shadow-lg"
+  >
+    <iframe
+      :src="getEmbedUrl(url)"
+      title="YouTube video player"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+      "
       allowfullscreen
-      class="w-full h-full"
+      class="h-full w-full"
     ></iframe>
   </div>
 </template>

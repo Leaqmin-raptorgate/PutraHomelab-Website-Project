@@ -1,21 +1,27 @@
+import path from 'node:path'
+
 export const navItems = [
-  { 
-    name: 'Articles', 
-    path: '/articles' 
+  {
+    name: 'Home',
+    path: '/'
   },
-  { 
-    name: 'Categories', 
-    path: '#', 
+  {
+    name: 'Articles',
+    path: '/articles'
+  },
+  {
+    name: 'Categories',
+    path: '#',
     children: [
-        { name: 'Linux', path: '/articles/linux' },
-        { name: 'Hardware', path: '/articles/hardware' },
-        { name: 'Networking', path: '/articles/network' },
-        { name: 'Self-Hosting', path: '/articles/self-hosting' },
-        { name: 'Case Studies', path: '#' },
+      { name: 'Linux', path: '/articles/linux' },
+      { name: 'Hardware', path: '/articles/hardware' },
+      { name: 'Networking', path: '/articles/network' },
+      { name: 'Self-Hosting', path: '/articles/self-hosting' },
+      { name: 'Case Studies', path: '#' }
     ]
   },
-  { 
-    name: 'About', 
-    path: '/about' 
+  {
+    name: 'About',
+    path: '/about'
   }
 ]

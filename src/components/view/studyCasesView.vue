@@ -1,0 +1,49 @@
+<script setup>
+import FeatureSection from '@/components/sections/featureSection.vue'
+
+// Manual Data for Case Studies (Or import from a separate file)
+const cases = [
+  {
+    id: 1,
+    title: 'Home Cloud Infrastructure',
+    subtitle: 'INFRASTRUCTURE',
+    desc: 'How I replaced Google Drive with a self-hosted Nextcloud instance running on a Raspberry Pi cluster, saving $100/yr and reclaiming privacy.',
+    image: '/src/assets/pictures/elaina chill 1.png' // Use your real images
+  },
+  {
+    id: 2,
+    title: 'Network Segmentation',
+    subtitle: 'SECURITY',
+    desc: 'Isolating IoT devices from the main network using VLANs on a Mikrotik router to prevent smart bulbs from sniffing packet traffic.',
+    image: '/src/assets/pictures/elaina chill 1.png'
+  },
+  {
+    id: 3,
+    title: 'Automated Media Server',
+    subtitle: 'AUTOMATION',
+    desc: 'Setting up the *Arr stack (Sonarr, Radarr) with Jellyfin for a completely automated home theater experience managed by Docker Compose.',
+    image: '/src/assets/pictures/elaina chill 1.png'
+  }
+]
+</script>
+
+<template>
+  <div class="lab-section">
+    <div class="mb-20 space-y-4 text-center">
+      <h1 class="lab-h1">Case Studies</h1>
+      <p class="mx-auto max-w-2xl font-sans text-slate-400">
+        Deep dives into the specific problems I've solved in my homelab journey.
+      </p>
+    </div>
+
+    <div v-for="(item, index) in cases" :key="item.id">
+      <FeatureSection
+        :title="item.title"
+        :subtitle="item.subtitle"
+        :is-flipped="index % 2 !== 0"
+      >
+        {{ item.desc }}
+      </FeatureSection>
+    </div>
+  </div>
+</template>

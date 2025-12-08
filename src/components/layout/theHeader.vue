@@ -2,14 +2,13 @@
 import { ref } from 'vue'
 import { RouterLink } from 'vue-router'
 import { navItems } from '@/assets/data/dropdownData.js'
-import NavBarItem from '@/components/layout/dropdown.vue'
 // 1. STATE: Tracks if the mobile menu is visible
 const isMobileMenuOpen = ref(false)
 
 // 2. ACTION: Toggles the state
 const toggleMenu = () => {
   isMobileMenuOpen.value = !isMobileMenuOpen.value
-  
+
   // Optional: Stop background scrolling when menu is open
   if (isMobileMenuOpen.value) {
     document.body.style.overflow = 'hidden'
@@ -26,37 +25,127 @@ const closeMenu = () => {
 </script>
 
 <template>
-  <header class="w-full bg-[#1e293b] border-b border-slate-700/50 sticky top-0 z-50 shadow-xl shadow-black/40">
-    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-      
-      <div class="flex items-center gap-3 relative z-50">
+  <header
+    class="sticky top-0 z-50 w-full border-b border-slate-700/50 bg-[#1e293b] shadow-xl shadow-black/40"
+  >
+    <div class="mx-auto flex h-20 max-w-6xl items-center justify-between px-6">
+      <div class="relative z-50 flex items-center gap-3">
         <RouterLink to="/" @click="closeMenu">
-          <img 
-            class="w-32 md:w-48 h-auto object-contain -ml-2" 
-            src="/src/assets/pictures/logo/logoWeb.png" 
-            alt="PUTRA Logo" 
+          <img
+            class="-ml-2 h-auto w-32 object-contain md:w-48"
+            src="/src/assets/pictures/logo/logoWeb.png"
+            alt="PUTRA Logo"
           />
         </RouterLink>
       </div>
 
-      <nav class="hidden md:flex items-center gap-8 h-full">
-        <NavBarItem 
-          v-for="nav in navItems" 
-          :key="nav.name" 
-          :item="nav" 
-        />
+      <nav class="hidden h-full items-center gap-8 md:flex">
+        <RouterLink
+          to="/"
+          class="font-mono text-slate-400 transition-colors hover:text-white"
+        >
+          Home
+        </RouterLink>
+
+        <RouterLink
+          to="/articles"
+          class="font-mono text-slate-400 transition-colors hover:text-white"
+        >
+          Articles
+        </RouterLink>
+
+        <div class="group relative flex h-full cursor-pointer items-center">
+          <span
+            class="flex items-center gap-1 font-mono text-white transition-colors hover:text-blue-400"
+          >
+            Categories
+            <svg
+              class="h-3 w-3 transition-transform duration-200 group-hover:rotate-180"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </span>
+
+          <div
+            class="invisible absolute top-full left-0 w-48 translate-y-2 rounded-b-md border border-slate-700 bg-[#1e293b] opacity-0 shadow-xl transition-all duration-200 ease-out group-hover:visible group-hover:translate-y-0 group-hover:opacity-100"
+          >
+            <div class="flex flex-col py-2">
+              <RouterLink
+                to="/articles/linux"
+                class="border-l-2 border-transparent px-4 py-3 font-mono text-xs text-slate-400 transition-colors hover:border-blue-400 hover:bg-slate-800 hover:text-white"
+                >Linux
+              </RouterLink>
+              <RouterLink
+                to="/articles/hardware"
+                class="border-l-2 border-transparent px-4 py-3 font-mono text-xs text-slate-400 transition-colors hover:border-blue-400 hover:bg-slate-800 hover:text-white"
+                >Hardware</RouterLink
+              >
+              <RouterLink
+                to="/articles/network"
+                class="border-l-2 border-transparent px-4 py-3 font-mono text-xs text-slate-400 transition-colors hover:border-blue-400 hover:bg-slate-800 hover:text-white"
+                >Network</RouterLink
+              >
+              <RouterLink
+                to="/articles/self-hosting"
+                class="border-l-2 border-transparent px-4 py-3 font-mono text-xs text-slate-400 transition-colors hover:border-blue-400 hover:bg-slate-800 hover:text-white"
+                >Self-Hosting</RouterLink
+              >
+              <RouterLink
+                to="/study-cases"
+                class="border-l-2 border-transparent px-4 py-3 font-mono text-xs text-slate-400 transition-colors hover:border-blue-400 hover:bg-slate-800 hover:text-white"
+                >Study Cases</RouterLink
+              >
+            </div>
+          </div>
+        </div>
+
+        <RouterLink
+          to="/about"
+          class="font-mono text-slate-400 transition-colors hover:text-white"
+        >
+          About
+        </RouterLink>
       </nav>
 
-      <button 
+      <button
         @click="toggleMenu"
-        class="text-white md:hidden relative z-50 p-2 focus:outline-none"
+        class="relative z-50 p-2 text-white focus:outline-none md:hidden"
       >
-        <svg v-if="!isMobileMenuOpen" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        <svg
+          v-if="!isMobileMenuOpen"
+          class="h-8 w-8"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
         </svg>
-
-        <svg v-else class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        <svg
+          v-else
+          class="h-8 w-8"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          ></path>
         </svg>
       </button>
 
@@ -68,40 +157,78 @@ const closeMenu = () => {
         leave-from-class="opacity-100 translate-y-0"
         leave-to-class="opacity-0 -translate-y-4"
       >
-        <div 
-          v-if="isMobileMenuOpen" 
-          class="fixed inset-0 bg-[#1e293b] pt-24 px-6 md:hidden overflow-y-auto"
+        <div
+          v-if="isMobileMenuOpen"
+          class="fixed inset-0 overflow-y-auto bg-[#1e293b] px-6 pt-24 md:hidden"
         >
           <nav class="flex flex-col space-y-6">
-            
-            <div v-for="item in navItems" :key="item.name" class="space-y-3">
-              
-              <RouterLink 
-                :to="item.path" 
-                class="text-2xl font-bold font-mono text-white block border-b border-slate-700/50 pb-2"
-                @click="closeMenu"
+            <RouterLink
+              to="/"
+              class="block border-b border-slate-700/50 pb-2 font-mono text-2xl text-white"
+              @click="closeMenu"
+              >Home</RouterLink
+            >
+
+            <RouterLink
+              to="/articles"
+              class="block border-b border-slate-700/50 pb-2 font-mono text-2xl text-white"
+              @click="closeMenu"
+              >Articles</RouterLink
+            >
+            <RouterLink
+              to="/study-cases"
+              class="block border-b border-slate-700/50 pb-2 font-mono text-2xl text-white"
+              @click="closeMenu"
+              >Study Cases</RouterLink
+            >
+            <div
+              class="ml-2 flex flex-col space-y-3 border-l-2 border-slate-700 pl-6"
+            >
+              <span
+                class="mb-1 font-mono tracking-widest text-slate-500 uppercase"
+                >Categories</span
               >
-                {{ item.name }}
-              </RouterLink>
-
-              <div v-if="item.children" class="flex flex-col space-y-3 pl-6 border-l-2 border-slate-700 ml-2">
-                <RouterLink 
-                  v-for="child in item.children" 
-                  :key="child.name"
-                  :to="child.path"
-                  class="text-slate-400 font-mono text-sm hover:text-blue-400 transition-colors"
-                  @click="closeMenu"
-                >
-                  {{ child.name }}
-                </RouterLink>
-              </div>
-
+              <RouterLink
+                to="/articles/linux"
+                class="font-mono text-sm text-slate-400 hover:text-white"
+                @click="closeMenu"
+                >Linux</RouterLink
+              >
+              <RouterLink
+                to="/articles/hardware"
+                class="font-mono text-sm text-slate-400 hover:text-white"
+                @click="closeMenu"
+                >Hardware</RouterLink
+              >
+              <RouterLink
+                to="/articles/network"
+                class="font-mono text-sm text-slate-400 hover:text-white"
+                @click="closeMenu"
+                >Network</RouterLink
+              >
+              <RouterLink
+                to="/articles/self-hosting"
+                class="font-mono text-sm text-slate-400 hover:text-white"
+                @click="closeMenu"
+                >Self-Hosting</RouterLink
+              >
+              <RouterLink
+                to="/articles/study-cases"
+                class="font-mono text-sm text-slate-400 hover:text-white"
+                @click="closeMenu"
+                >Study Cases</RouterLink
+              >
             </div>
 
+            <RouterLink
+              to="/about"
+              class="block border-b border-slate-700/50 pb-2 font-mono text-2xl text-white"
+              @click="closeMenu"
+              >About</RouterLink
+            >
           </nav>
         </div>
       </Transition>
-
     </div>
   </header>
 </template>

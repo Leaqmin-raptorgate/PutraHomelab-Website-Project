@@ -12,44 +12,42 @@ defineProps({
 
 <template>
   <section class="lab-section">
-    
-    <div 
+    <div
       class="flex flex-col-reverse items-center gap-12 md:gap-20"
       :class="isFlipped ? 'md:flex-row-reverse' : 'md:flex-row'"
     >
-      
-      <div class="w-full md:w-1/2 space-y-6">
+      <div class="w-full space-y-6 md:w-1/2">
         <div class="lab-badge text-blue-400">
           {{ subtitle }}
         </div>
-        
-        <h2 class="lab-h1 text-3xl
-                    md:text-4xl">
+
+        <h2 class="lab-h1 text-3xl md:text-4xl">
           {{ title }}
         </h2>
-        
-        <p class="text-slate-400 font-sans leading-relaxed">
+
+        <p class="font-sans leading-relaxed text-slate-400">
           <slot />
         </p>
 
-        <a href="#" class= "inline-block border-b 
-                            text-sm font-mono
-                          border-blue-400 text-blue-400 pb-1 
-                          hover:text-white hover:border-white transition-colors">
+        <a
+          href="#"
+          class="inline-block border-b border-blue-400 pb-1 font-mono text-sm text-blue-400 transition-colors hover:border-white hover:text-white"
+        >
           Read Case Study >
         </a>
       </div>
 
-      <div class="w-full md:w-1/2 flex justify-center">
-        <div class="w-full max-w-md aspect-video bg-slate-800 rounded-xl border border-slate-700/50 flex   
-                    items-center justify-center relative overflow-hidden group">
-
-          <span class="text-slate-600 font-mono text-sm group-hover:text-blue-400 transition-colors">
+      <div class="flex w-full justify-center md:w-1/2">
+        <div
+          class="group relative flex aspect-video w-full max-w-md items-center justify-center overflow-hidden rounded-xl border border-slate-700/50 bg-slate-800"
+        >
+          <span
+            class="font-mono text-sm text-slate-600 transition-colors group-hover:text-blue-400"
+          >
             [ Visual_Placeholder ]
           </span>
         </div>
       </div>
-
     </div>
   </section>
 </template>
