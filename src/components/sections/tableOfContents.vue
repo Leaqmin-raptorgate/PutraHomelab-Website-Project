@@ -6,7 +6,7 @@ defineProps({
 
 <template>
   <nav
-    class="sticky top-24 rounded-xl border border-slate-700/50 bg-lab-surface/50 p-6 backdrop-blur"
+    class="bg-lab-surface/50 sticky top-24 rounded-xl border border-slate-700/50 p-6 backdrop-blur"
   >
     <h3
       class="mb-4 font-mono text-xs font-bold tracking-widest text-white uppercase"

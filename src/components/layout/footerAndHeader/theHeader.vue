@@ -27,7 +27,7 @@ const closeMenu = () => {
 
 <template>
   <header
-    class="sticky top-0 z-50 w-full border-b border-slate-700/50 bg-lab-surface shadow-xl shadow-black/40"
+    class="bg-lab-surface sticky top-0 z-50 w-full border-b border-slate-700/50 shadow-xl shadow-black/40"
   >
     <div class="mx-auto flex h-20 max-w-6xl items-center justify-between px-6">
       <div class="relative z-50 flex items-center gap-3">
@@ -129,7 +129,7 @@ const closeMenu = () => {
       >
         <div
           v-if="isMobileMenuOpen"
-          class="fixed inset-0 overflow-y-auto bg-lab-surface px-6 pt-24 md:hidden"
+          class="bg-lab-surface fixed inset-0 overflow-y-auto px-6 pt-24 md:hidden"
         >
           <nav class="flex flex-col space-y-6">
             <RouterLink

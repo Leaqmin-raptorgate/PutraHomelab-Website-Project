@@ -6,7 +6,6 @@ defineProps({
   date: String,
   excerpt: String,
   image: String,
-  // img icon later
   iconName: String
 })
 </script>
@@ -28,7 +27,7 @@ defineProps({
       />
       <div
         v-else
-        class="h-full w-full bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px] opacity-10"
+        class="h-full w-full bg-[radial-gradient(#fff_1px,transparent_1px)] bg-size-[16px_16px] opacity-10"
       ></div>
     </div>
 

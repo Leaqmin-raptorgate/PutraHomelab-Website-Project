@@ -23,7 +23,7 @@ body {
 
   /* 2. Card Base Style (Used in ArticleCard & ArticleRow) */
   .lab-card {
-    @apply cursor-pointer rounded-xl border border-slate-700/50 bg-lab-surface transition-all duration-300 hover:border-slate-600 hover:bg-slate-800 hover:shadow-xl;
+    @apply bg-lab-surface cursor-pointer rounded-xl border border-slate-700/50 transition-all duration-300 hover:border-slate-600 hover:bg-slate-800 hover:shadow-xl;
   }
 
   /* 3. Icon Circle (The Red/Blue circle) */
