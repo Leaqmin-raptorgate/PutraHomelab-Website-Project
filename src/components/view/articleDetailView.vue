@@ -5,10 +5,11 @@ import TableOfContents from '@/components/sections/tableOfContents.vue'
 
 // DUMMY DATA
 const article = {
-  title: '#Title#',
+  title: 'Setting Up a Personal Linux Server: A Step-by-Step Guide',
   date: '25-11-2025',
   category: 'Linux',
-  readTime: '5 min',
+  readTime: '10 min',
+
   // TOC dummy
   toc: [
     { id: 'intro', text: 'Introduction' },
@@ -30,7 +31,7 @@ const article = {
       </RouterLink>
 
       <h1
-        class="font-mono text-4xl font-bold tracking-tighter text-white md:text-6xl"
+        class="font-mono text-4xl font-bold tracking-tighter text-white"
       >
         {{ article.title }}
       </h1>
@@ -55,9 +56,12 @@ const article = {
             Introduction
           </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium
-            tellus duis convallis tempus leo eu aenean. Iaculis massa nisl
-            malesuada lacinia integer nunc posuere.
+            Welcome to this comprehensive guide on setting up your very own
+            personal Linux server! Whether you're a seasoned sysadmin or a
+            curious beginner, this article will walk you through the essential
+            steps to get your server up and running. From selecting the right hardware
+            to installing the operating system and configuring services, we've got
+            you covered.
           </p>
         </div>
 
@@ -66,15 +70,20 @@ const article = {
             The Setup
           </h2>
           <p>
-            Conubia nostra inceptos himenaeos orci varius natoque penatibus.
-            Nulla molestie mattis scelerisque maximus eget fermentum odio.
+            Building a home server starts with a solid foundation. Once you have installed your Linux distribution of choice (I recommend Debian or 
+            Ubuntu Server for stability), the first thing you need to do is ensure your package repositories are up to date 
           </p>
-
+          <p>
+            Open your terminal and run the following command to update your package lists and upgrade existing packages:
+          </p>
           <div
             class="my-6 rounded-lg border border-slate-700 bg-black/50 p-4 font-mono text-sm text-green-400"
           >
             $ sudo apt update && sudo apt upgrade -y
           </div>
+          <p>
+            This command ensures that your system has the latest package information and applies any available updates, keeping your server secure and up to date.
+          </p>
         </div>
 
         <div id="video">
@@ -82,11 +91,9 @@ const article = {
             Video Demo
           </h2>
           <p class="mb-4">
-            Here is a quick demonstration of the process running on my local
-            machine:
+            Here is a video a person explaining homelab server setup (credit to hardwarehaven!):
           </p>
-
-          <VideoEmbed url="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
+          <VideoEmbed/>
         </div>
 
         <div id="conclusion">
@@ -94,26 +101,12 @@ const article = {
             Conclusion
           </h2>
           <p>
-            Yass queen, slay all day, bet! I'm shooketh, TBH fam, that meme's
-            lit AF. SMH my head, bruh, that's a big mood. Low-key vibin', no
-            cap. This is the tea, sis, sippin' it. If you ain't yeeting, you
-            ain't trying. FOMO's real, YOLO, amirite? Legit squad goals. OMG,
-            that hit different. Stan culture, flexin' on the gram. Bruh, I'm
-            deceased, sending it to the group chat. Big brain energy, boomer
-            alert. Oof, that's a yikes from me, dawg. Thirst trap, TFW, can't
-            even. Sksksk and I oop, VSCO vibes. Dank memes, let's get this
-            bread, stay woke. Ratioed, straight fire, fam. Glow up, hella extra.
-            Spoopy season, I was today years old. It's the clout for me. Hard
-            pass, fight me IRL. Snatched, fam, squad up, finna bounce. Deadass,
-            no lie, TL;DR, that's sus. Big oof, wholesome 100. Poggers, y'all.
-            Highkey goals, ship it. I can't even. Yeet or be yeeted, on fleek.
-            Chief called, this ain't it. Bae AF, we stan. IDK man, just vibing.
-            Bet, that's on periodt. Stan Twitter, wig flew. OTP, that glow up
-            tho. No chill, full send. Defo not okay. TFW, mood, aesthetic. SMH,
-            triggered. Flex, bruh, goals AF. I'm baby, uwu. Fr though, meme
-            lord. Spill the tea, shook. Bet, pop off, king. Whomst'd've, boomer
-            energy. Yas, slay. RIP, next level. Big facts, no printer.
-            Cancelled, full send, vibes..
+            Setting up a personal Linux server is a rewarding journey that teaches you the fundamentals of 
+            system administration and networking. While the command line might 
+            seem intimidating at first, it offers unparalleled control over your digital environment. 
+            Whether you plan to host a simple static website or a complex array of Docker containers, the skills you learn here are the 
+            building blocks of modern IT infrastructure. Stay tuned for the 
+            next article where we will cover setting up a reverse proxy with Nginx!
           </p>
         </div>
       </article>

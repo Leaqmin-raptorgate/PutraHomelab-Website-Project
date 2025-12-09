@@ -1,6 +1,6 @@
 <template>
   <div
-    class="lab-card w-full max-w-md rotate-2 bg-[#0f172a] p-6 font-mono text-xs text-slate-300 shadow-2xl transition-transform duration-500 hover:rotate-0 md:text-sm"
+    class="lab-card w-full max-w-md rotate-2 p-6 font-mono text-xs text-slate-300 shadow-2xl transition-transform duration-500 hover:rotate-0 md:text-sm"
   >
     <div class="mb-4 flex gap-2 border-b border-slate-700 pb-4">
       <div class="h-3 w-3 rounded-full bg-red-500"></div>

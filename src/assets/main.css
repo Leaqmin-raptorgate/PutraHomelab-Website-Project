@@ -58,7 +58,7 @@ body {
 
 @layer utilities {
   .scrollbar-hide {
-    .scrollbar-hide ::-webkit-scrollbar {
+  .scrollbar-hide ::-webkit-scrollbar {
       display: none;
     }
   }

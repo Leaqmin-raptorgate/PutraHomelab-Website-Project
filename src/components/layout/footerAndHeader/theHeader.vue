@@ -27,7 +27,7 @@ const closeMenu = () => {
 
 <template>
   <header
-    class="bg-lab-surface sticky top-0 z-50 w-full border-b border-slate-700/50 shadow-xl shadow-black/40"
+    class="bg-lab-surface sticky top-0 z-50 w-full border-b border-slate-700/50 shadow-lg shadow-black/40"
   >
     <div class="mx-auto flex h-20 max-w-6xl items-center justify-between px-6">
       <div class="relative z-50 flex items-center gap-3">

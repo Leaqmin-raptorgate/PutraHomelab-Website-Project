@@ -4,7 +4,7 @@
   >
     <iframe
       class="h-full w-full"
-      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      src="https://www.youtube.com/embed/uPYjJYQEFSg"
       title="YouTube video player"
       frameborder="0"
       allow="
@@ -16,7 +16,6 @@
         picture-in-picture;
         web-share;
       "
-      referrerpolicy="strict-origin-when-cross-origin"
       allowfullscreen
     >
     </iframe>

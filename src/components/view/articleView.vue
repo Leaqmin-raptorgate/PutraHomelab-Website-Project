@@ -41,7 +41,7 @@ const pageDesc = computed(() => {
 <template>
   <div class="lab-section">
     <div>
-      <h1 class="lab-h1 text-3xl md:text-5xl">{{ pageTitle }} articles</h1>
+      <h1 class="lab-h1 text-3xl md:text-5xl">{{ pageTitle }} </h1>
 
       <h2 class="mt-2 mb-8 font-mono text-sm text-slate-400 md:text-base">
         {{ pageDesc }}

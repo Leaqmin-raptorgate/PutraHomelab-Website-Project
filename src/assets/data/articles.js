@@ -6,7 +6,7 @@ export const articles = [
     excerpt:
       'Lorem ipsum dolor amet tolong siapa disini makan ayam goreng berlapis lapis kayak ketabrak truck kun.',
     date: '2025-11-20',
-    image: '/src/assets/pictures/elaina chill 1.png', // Ensure path is correct
+    image: '/src/assets/data/articles-pictures/debian.jpg',
     iconName: 'linux'
   },
   {
@@ -16,7 +16,7 @@ export const articles = [
     excerpt:
       'Fan curves, undervolting, and choosing the right case for a server that sleeps in your bedroom.',
     date: '2025-11-18',
-    image: '/src/assets/pictures/elaina chill 1.png',
+    image: '/src/assets/data/articles-pictures/MT720.jpg',
     iconName: 'hardware'
   },
   {
@@ -26,7 +26,7 @@ export const articles = [
     excerpt:
       'It is actually easier than you think. Here is a guide to organizing your home IP addresses.',
     date: '2025-11-15',
-    image: '/src/assets/pictures/elaina chill 1.png',
+    image: '/src/assets/data/articles-pictures/vlan.png',
     iconName: 'network'
   },
   {
@@ -34,9 +34,9 @@ export const articles = [
     category: 'Self-Hosting',
     title: 'Self-hosting Nextcloud: A tragedy in 3 acts',
     excerpt:
-      'How to move your entire digital footprint into portable containers and never look back.',
+      'Learn how to deploy a local google drive version on your home server using Nextcloud.',
     date: '2025-11-10',
-    image: '/src/assets/pictures/elaina chill 1.png',
+    image: '/src/assets/data/articles-pictures/nextcloud.jpg',
     iconName: 'self-hosting'
   },
   {
@@ -44,9 +44,9 @@ export const articles = [
     category: 'Linux',
     title: 'Why you should try Arch Linux',
     excerpt:
-      'How to move your entire digital footprint into portable containers and never look back.',
+      'A deep dive into arch linux and level up to "i use arch btw" status.',
     date: '2025-11-10',
-    image: '/src/assets/pictures/elaina chill 1.png',
+    image: '/src/assets/data/articles-pictures/arch-linux.jpg',
     iconName: 'linux'
   }
   // Add more articles here easily...

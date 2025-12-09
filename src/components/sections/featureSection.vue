@@ -40,12 +40,12 @@ defineProps({
 
       <div class="flex w-full justify-center md:w-1/2">
         <div
-          class="group relative flex aspect-video w-full max-w-md items-center justify-center overflow-hidden rounded-xl border border-slate-700/50 bg-slate-800"
+          class="group relative flex aspect-video w-full max-w-md items-center justify-center overflow-hidden rounded-xl border border-slate-700/50 bg-slate-800 shadow-2xl"
         >
           <img
             :src="image"
             alt="[Feature Image placeholder]"
-            class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 "
           />
         </div>
       </div>

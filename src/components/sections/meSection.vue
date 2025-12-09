@@ -1,5 +1,5 @@
 <script setup>
-import bioImage from '/src/assets/pictures/elaina chill 1.png'
+import bioImage from '/src/assets/pictures/memakkah.JPG'
 </script>
 <template>
   <div class="border-t border-slate-700/50 pt-20">
@@ -29,20 +29,16 @@ import bioImage from '/src/assets/pictures/elaina chill 1.png'
         </p>
 
         <p class="font-mono text-sm text-slate-500 italic">
-          "I break things so I can learn how to fix them."
+          "I break things so I can learn how it works and fix em."
         </p>
 
         <div class="flex justify-center gap-4 pt-2 md:justify-start">
-          <a href="#" class="text-slate-400 transition-colors hover:text-white"
+          <a href="https://github.com/Leaqmin-raptorgate" class="text-slate-400 transition-colors hover:text-white"
             >GitHub</a
           >
           <span class="text-slate-700">•</span>
-          <a href="#" class="text-slate-400 transition-colors hover:text-white"
+          <a href="https://www.linkedin.com/in/muhammad-aditya-putra-14a29637b/" class="text-slate-400 transition-colors hover:text-white"
             >LinkedIn</a
-          >
-          <span class="text-slate-700">•</span>
-          <a href="#" class="text-slate-400 transition-colors hover:text-white"
-            >Email</a
           >
         </div>
       </div>
