@@ -12,13 +12,15 @@ import latestArticle from '@/components/sections/latestArticle.vue'
     <latestArticle />
 
     <featureSection
-      title="Feature Section Placeholder"
+      title="Network Optimization Kemala Beach Resort"
       subtitle="FEATURED"
+      image="/src/assets/data/study-case/pictures/kemalabeach.png"
       :isFlipped="false"
     >
-      This is a placeholder for the feature section content. You can describe a
-      specific feature, service, or case study here to highlight its importance
-      and engage your audience.
+      This is about how i optimized the network infrastructure at
+      Kemala Beach Resort to improve connectivity and performance for 
+      guests and staff. Implemented VLANs, Upgraded Hardware, Clear Network Policies
+      and design with a massive improvement in network speed and reliability.
     </featureSection>
   </body>
 </template>

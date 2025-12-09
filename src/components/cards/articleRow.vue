@@ -1,5 +1,4 @@
 <script setup>
-// Define what data this card needs to receive from the parent
 defineProps({
   category: String,
   title: String,

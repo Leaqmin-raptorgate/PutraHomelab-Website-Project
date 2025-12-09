@@ -5,14 +5,14 @@ import FeatureSection from '@/components/sections/featureSection.vue'
 const cases = [
   {
     id: 1,
-    title: 'Home Cloud Infrastructure',
-    subtitle: 'INFRASTRUCTURE',
-    desc: 'How I replaced Google Drive with a self-hosted Nextcloud instance running on a Raspberry Pi cluster, saving $100/yr and reclaiming privacy.',
+    title: 'Network Optimization Kemala Beach Resort',
+    subtitle: 'NETWORKING',
+    desc: 'This is about how i optimized the network infrastructure at Kemala Beach Resort to improve connectivity and performance for guests and staff. Implemented VLANs, Upgraded Hardware, Clear Network Policies and design with a massive improvement in network speed and reliability.',
     image: '/src/assets/pictures/elaina chill 1.png' // Use your real images
   },
   {
     id: 2,
-    title: 'Network Segmentation',
+    title: '',
     subtitle: 'SECURITY',
     desc: 'Isolating IoT devices from the main network using VLANs on a Mikrotik router to prevent smart bulbs from sniffing packet traffic.',
     image: '/src/assets/pictures/elaina chill 1.png'
@@ -40,6 +40,7 @@ const cases = [
       <FeatureSection
         :title="item.title"
         :subtitle="item.subtitle"
+        :image="item.image"
         :is-flipped="index % 2 !== 0"
       >
         {{ item.desc }}

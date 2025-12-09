@@ -13,7 +13,7 @@ import bioImage from '/src/assets/pictures/elaina chill 1.png'
         <img
           :src="bioImage"
           alt="Putra"
-          class="relative h-40 w-40 rounded-full border-2 border-slate-700 object-cover shadow-2xl transition-transform duration-300 group-hover:scale-105"
+          class="relative h-40 w-40 rounded-full border-2 border-slate-700 object-cover shadow-2xl transition-transform duration-300 group-hover:scale-110"
         />
       </div>
 

@@ -2,6 +2,7 @@
 defineProps({
   title: String,
   subtitle: String,
+  image: String,
   // If 'isFlipped' is true, image goes to t'/src/assets/pictures/elaina chill 1.png'he Left. If false, Image on Right.
   isFlipped: {
     type: Boolean,
@@ -42,7 +43,7 @@ defineProps({
           class="group relative flex aspect-video w-full max-w-md items-center justify-center overflow-hidden rounded-xl border border-slate-700/50 bg-slate-800"
         >
           <img
-            src="/src/assets/pictures/elaina chill 1.png"
+            :src="image"
             alt="[Feature Image placeholder]"
             class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
