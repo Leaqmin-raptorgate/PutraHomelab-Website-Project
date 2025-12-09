@@ -1,6 +1,6 @@
 <script setup>
 defineProps({
-  headers: Array // Expects [{ id: 'intro', text: 'Introduction' }, ...]
+  headers: Array
 })
 </script>
 

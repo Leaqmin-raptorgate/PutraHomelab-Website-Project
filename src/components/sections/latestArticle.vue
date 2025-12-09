@@ -19,12 +19,12 @@ import { articles } from '/src/assets/data/articles.js'
     </div>
 
     <div
-      class="scrollbar-hide -mx-6 flex snap-x snap-mandatory gap-6 overflow-x-auto px-6 pb-8 md:mx-0 md:px-0"
+      class="scrollbar-hide -mx-6 flex gap-6 overflow-x-auto px-6 pb-8 md:mx-0 md:px-0"
     >
       <div
         v-for="item in articles"
         :key="item.id"
-        class="scrollbar-hide w-[85vw] flex-none snap-center sm:w-80 md:w-96"
+        class="w-[85vw] flex-none sm:w-80 md:w-96"
       >
         <ArticleCard
           :image="item.image || ''"

@@ -28,25 +28,30 @@ const routes = [
     component: ArticleView
   },
   {
-    path: '/articles/network',
-    name: 'ArticlesNetwork',
-    component: articleViewNetwork
+    path: '/articles/:category',
+    name: 'ArticlesCategory',
+    component: ArticleView
   },
-  {
-    path: '/articles/self-hosting',
-    name: 'ArticlesSelfHosting',
-    component: articleViewSelfHost
-  },
-  {
-    path: '/articles/hardware',
-    name: 'ArticlesHardware',
-    component: articleViewHardware
-  },
-  {
-    path: '/articles/linux',
-    name: 'ArticlesLinux',
-    component: articleViewLinux
-  },
+  // {
+  //   path: '/articles/network',
+  //   name: 'ArticlesNetwork',
+  //   component: articleViewNetwork
+  // },
+  // {
+  //   path: '/articles/self-hosting',
+  //   name: 'ArticlesSelfHosting',
+  //   component: articleViewSelfHost
+  // },
+  // {
+  //   path: '/articles/hardware',
+  //   name: 'ArticlesHardware',
+  //   component: articleViewHardware
+  // },
+  // {
+  //   path: '/articles/linux',
+  //   name: 'ArticlesLinux',
+  //   component: articleViewLinux
+  // },
   {
     path: '/articles/demo',
     name: 'ArticlesDemo',

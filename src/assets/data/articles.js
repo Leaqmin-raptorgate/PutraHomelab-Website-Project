@@ -6,7 +6,7 @@ export const articles = [
     excerpt:
       'Lorem ipsum dolor amet tolong siapa disini makan ayam goreng berlapis lapis kayak ketabrak truck kun.',
     date: '2025-11-20',
-    // image: '/src/assets/pictures/elaina chill 1.png', // Ensure path is correct
+    image: '/src/assets/pictures/elaina chill 1.png', // Ensure path is correct
     iconName: 'linux'
   },
   {

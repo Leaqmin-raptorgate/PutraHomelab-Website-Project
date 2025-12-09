@@ -23,12 +23,13 @@ const iconMap = {
 </script>
 
 <template>
-  <article
+  <RouterLink
+    :to="`/articles/demo`"
     class="group lab-card relative flex flex-col overflow-hidden md:h-64 md:flex-row"
   >
     <div class="relative w-full overflow-hidden bg-slate-800 md:w-1/3">
       <div
-        class="lab-icon-circle absolute top-4 left-4 bg-blue-600 shadow-lg shadow-blue-900/20"
+        class="lab-icon-circle absolute top-4 left-4 z-3 bg-blue-600 shadow-lg shadow-blue-900/20"
       >
         <img
           v-if="iconMap[iconName]"
@@ -47,10 +48,7 @@ const iconMap = {
         alt="Thumbnail"
         class="h-full w-full object-cover opacity-90 transition-opacity group-hover:opacity-100"
       />
-      <div
-        v-else
-        class="h-full w-full bg-[radial-gradient(#fff_1px,transparent_1px)] bg-size-[16px_16px] opacity-10"
-      ></div>
+      <div v-else class="h-full w-full bg-size-[16px_16px] opacity-10"></div>
     </div>
 
     <div class="flex w-full flex-col justify-center p-6 md:w-2/3 md:p-8">
@@ -76,5 +74,5 @@ const iconMap = {
         </span>
       </div>
     </div>
-  </article>
+  </RouterLink>
 </template>

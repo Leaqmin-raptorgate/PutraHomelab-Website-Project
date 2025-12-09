@@ -57,7 +57,7 @@ const closeMenu = () => {
 
         <div class="group relative flex h-full cursor-pointer items-center">
           <span
-            class="flex items-center gap-1 font-mono text-white transition-colors hover:text-blue-400"
+            class="flex items-center gap-1 font-mono text-slate-400 transition-colors hover:text-white"
           >
             Categories
             <svg
@@ -145,17 +145,10 @@ const closeMenu = () => {
               @click="closeMenu"
               >Articles</RouterLink
             >
-            <RouterLink
-              to="/study-cases"
-              class="block border-b border-slate-700/50 pb-2 font-mono text-2xl text-white"
-              @click="closeMenu"
-              >Study Cases</RouterLink
-            >
             <div
               class="ml-2 flex flex-col space-y-3 border-l-2 border-slate-700 pl-6"
             >
-              <span
-                class="mb-1 font-mono tracking-widest text-slate-500 uppercase"
+              <span class="mb-1 font-mono tracking-widest uppercase"
                 >Categories</span
               >
               <RouterLink
@@ -183,7 +176,7 @@ const closeMenu = () => {
                 >Self-Hosting</RouterLink
               >
               <RouterLink
-                to="/articles/study-cases"
+                to="/study-cases"
                 class="font-mono text-sm text-slate-400 hover:text-white"
                 @click="closeMenu"
                 >Study Cases</RouterLink

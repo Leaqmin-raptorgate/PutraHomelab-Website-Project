@@ -5,7 +5,9 @@ import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <theHeader />
-  <RouterView />
-  <theFooter />
+  <div class="flex min-h-screen flex-col">
+    <theHeader />
+    <RouterView />
+    <theFooter />
+  </div>
 </template>

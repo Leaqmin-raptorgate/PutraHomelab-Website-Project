@@ -1,20 +1,10 @@
-<script setup>
-defineProps({
-  url: String
-})
-
-const getEmbedUrl = (url) => {
-  const videoId = url.split('v=')[1] || url.split('/').pop()
-  return `https://www.youtube.com/embed/${videoId}`
-}
-</script>
-
 <template>
   <div
     class="my-8 aspect-video w-full overflow-hidden rounded-xl border border-slate-700/50 shadow-lg"
   >
     <iframe
-      :src="getEmbedUrl(url)"
+      class="h-full w-full"
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
       title="YouTube video player"
       frameborder="0"
       allow="
@@ -24,9 +14,11 @@ const getEmbedUrl = (url) => {
         encrypted-media;
         gyroscope;
         picture-in-picture;
+        web-share;
       "
+      referrerpolicy="strict-origin-when-cross-origin"
       allowfullscreen
-      class="h-full w-full"
-    ></iframe>
+    >
+    </iframe>
   </div>
 </template>

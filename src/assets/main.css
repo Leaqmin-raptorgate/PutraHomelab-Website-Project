@@ -9,6 +9,10 @@
   --font-display: 'JetBrains Mono', monospace;
 }
 
+html {
+  @apply scroll-pt-30 scroll-smooth;
+}
+
 body {
   background-color: var(--color-lab-bg);
   color: white;
@@ -49,5 +53,17 @@ body {
   /* Header, Dropdown Menu upon selection */
   .lab-header-dropdown-selection-btn {
     @apply border-l-2 border-transparent px-4 py-3 font-mono text-xs text-slate-400 transition-colors hover:border-blue-400 hover:bg-slate-800 hover:text-white;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    .scrollbar-hide ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }

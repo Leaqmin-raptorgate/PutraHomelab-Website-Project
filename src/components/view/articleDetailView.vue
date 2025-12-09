@@ -50,11 +50,8 @@ const article = {
       <article
         class="space-y-8 font-sans text-lg leading-loose text-slate-300 lg:col-span-3"
       >
-        <div>
-          <h2
-            class="mb-4 font-mono text-2xl font-bold text-white italic"
-            id="intro"
-          >
+        <div id="intro">
+          <h2 class="mb-4 font-mono text-2xl font-bold text-white italic">
             Introduction
           </h2>
           <p>
@@ -97,8 +94,26 @@ const article = {
             Conclusion
           </h2>
           <p>
-            Dui felis venenatis ultrices proin libero feugiat tristique. Cubilia
-            curae hac habitasse platea dictumst lorem ipsum.
+            Yass queen, slay all day, bet! I'm shooketh, TBH fam, that meme's
+            lit AF. SMH my head, bruh, that's a big mood. Low-key vibin', no
+            cap. This is the tea, sis, sippin' it. If you ain't yeeting, you
+            ain't trying. FOMO's real, YOLO, amirite? Legit squad goals. OMG,
+            that hit different. Stan culture, flexin' on the gram. Bruh, I'm
+            deceased, sending it to the group chat. Big brain energy, boomer
+            alert. Oof, that's a yikes from me, dawg. Thirst trap, TFW, can't
+            even. Sksksk and I oop, VSCO vibes. Dank memes, let's get this
+            bread, stay woke. Ratioed, straight fire, fam. Glow up, hella extra.
+            Spoopy season, I was today years old. It's the clout for me. Hard
+            pass, fight me IRL. Snatched, fam, squad up, finna bounce. Deadass,
+            no lie, TL;DR, that's sus. Big oof, wholesome 100. Poggers, y'all.
+            Highkey goals, ship it. I can't even. Yeet or be yeeted, on fleek.
+            Chief called, this ain't it. Bae AF, we stan. IDK man, just vibing.
+            Bet, that's on periodt. Stan Twitter, wig flew. OTP, that glow up
+            tho. No chill, full send. Defo not okay. TFW, mood, aesthetic. SMH,
+            triggered. Flex, bruh, goals AF. I'm baby, uwu. Fr though, meme
+            lord. Spill the tea, shook. Bet, pop off, king. Whomst'd've, boomer
+            energy. Yas, slay. RIP, next level. Big facts, no printer.
+            Cancelled, full send, vibes..
           </p>
         </div>
       </article>

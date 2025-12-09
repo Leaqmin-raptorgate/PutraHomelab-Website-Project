@@ -22,14 +22,17 @@ const iconMap = {
 </script>
 
 <template>
-  <div class="lab-card group flex h-full flex-col p-6">
+  <RouterLink
+    class="lab-card group flex h-full flex-col p-6"
+    :to="`/articles/demo`"
+  >
     <div class="mb-4 flex items-center gap-3">
       <div class="lab-icon-circle bg-blue-600 shadow-blue-900/20">
         <img
           v-if="iconMap[iconName]"
           :src="iconMap[iconName]"
           alt=""
-          class="h-5 w-auto"
+          class="h-5 w-auto invert"
         />
         <span v-else class="text-[10px]">{{
           category ? category.charAt(0) : ''
@@ -50,5 +53,5 @@ const iconMap = {
     <div class="mt-auto border-t border-slate-700/50 pt-6">
       <span class="font-mono text-xs text-slate-500"> Posted: {{ date }} </span>
     </div>
-  </div>
+  </RouterLink>
 </template>
