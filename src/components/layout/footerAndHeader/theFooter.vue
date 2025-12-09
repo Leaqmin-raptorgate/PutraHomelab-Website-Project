@@ -54,7 +54,7 @@
         </a>
 
         <a
-          href="#"
+          href="https://www.linkedin.com/in/muhammad-aditya-putra-14a29637b/"
           class="rounded-sm bg-white p-1.5 text-black transition-colors hover:bg-slate-200"
         >
           <img

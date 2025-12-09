@@ -48,6 +48,16 @@ export const articles = [
     date: '2025-11-10',
     image: '/src/assets/data/articles-pictures/arch-linux.jpg',
     iconName: 'linux'
-  }
+  },
+  {
+    id: 6,
+    category: 'Network',
+    title: 'Mikrotik RouterOS: Beginner to Pro',
+    excerpt:
+      'Vlan, QoS, Firewall, and more. A complete guide to mastering Mikrotik RouterOS for home and small business networks.',
+    date: '2025-11-10',
+    image: '/src/assets/data/articles-pictures/arch-linux.jpg',
+    iconName: 'network'
+  },
   // Add more articles here easily...
 ]

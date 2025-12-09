@@ -8,21 +8,14 @@ const cases = [
     title: 'Network Optimization Kemala Beach Resort',
     subtitle: 'NETWORKING',
     desc: 'This is about how i optimized the network infrastructure at Kemala Beach Resort to improve connectivity and performance for guests and staff. Implemented VLANs, Upgraded Hardware, Clear Network Policies and design with a massive improvement in network speed and reliability.',
-    image: '/src/assets/pictures/elaina chill 1.png' // Use your real images
+    image: '/src/assets/data/study-case/pictures/kemalabeach.png' // Use your real images
   },
   {
     id: 2,
-    title: '',
-    subtitle: 'SECURITY',
-    desc: 'Isolating IoT devices from the main network using VLANs on a Mikrotik router to prevent smart bulbs from sniffing packet traffic.',
-    image: '/src/assets/pictures/elaina chill 1.png'
-  },
-  {
-    id: 3,
-    title: 'Automated Media Server',
-    subtitle: 'AUTOMATION',
-    desc: 'Setting up the *Arr stack (Sonarr, Radarr) with Jellyfin for a completely automated home theater experience managed by Docker Compose.',
-    image: '/src/assets/pictures/elaina chill 1.png'
+    title: 'Securely host a minecraft server with a "proxy server"',
+    subtitle: 'Networking and Self-Hosting',
+    desc: 'My so called "complicated" way how to securely host a minecraft server using a proxy server to mask real ip address to protect the main server from direct exposure to the internet.',
+    image: '/src/assets/pictures/minecraft.jpg'
   }
 ]
 </script>
