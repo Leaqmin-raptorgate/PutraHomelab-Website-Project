@@ -17,7 +17,7 @@ import heroCVimage from '/src/assets/pictures/memakkah.JPG'
       </div>
 
       <div
-        class="md:justify md:flex w-full justify-center md:w-1/2 md:justify-end hidden"
+        class="md:justify md:flex w-full justify-center md:w-1/2 md:justify-end hidden hover:scale-110"
       >
         <img
           :src="heroCVimage"
