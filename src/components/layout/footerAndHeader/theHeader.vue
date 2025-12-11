@@ -83,6 +83,12 @@ const closeMenu = () => {
         >
           About
         </RouterLink>
+        <RouterLink
+          to="/about/me"
+          class="font-mono text-slate-400 transition-colors hover:text-white"
+        >
+          About Me
+        </RouterLink>
       </nav>
 
       <button
@@ -189,6 +195,12 @@ const closeMenu = () => {
               @click="closeMenu"
               >About</RouterLink
             >
+            <RouterLink
+              to="/about/me"
+              class="block border-b border-slate-700/50 pb-2 font-mono text-2xl text-white"
+              @click="closeMenu"
+              >About Me
+            </RouterLink>
           </nav>
         </div>
       </Transition>

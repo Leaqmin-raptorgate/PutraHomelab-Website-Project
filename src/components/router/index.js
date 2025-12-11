@@ -6,6 +6,7 @@ import AboutView from '@/components/view/aboutView.vue'
 import ArticleView from '@/components/view/articleView.vue'
 import articleViewDemo from '@/components/view/articleDetailView.vue'
 import StudyCasesView from '../view/studyCasesView.vue'
+import CVPageView from '../view/CVPageView.vue'
 
 const routes = [
   {
@@ -38,6 +39,11 @@ const routes = [
     name: 'StudyCases',
     component: StudyCasesView
   },
+  {
+    path: '/about/me',
+    name: 'AboutMe',
+    component: CVPageView
+  }
 ]
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

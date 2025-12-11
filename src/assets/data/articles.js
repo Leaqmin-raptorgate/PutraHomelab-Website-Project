@@ -57,7 +57,7 @@ export const articles = [
       'Vlan, QoS, Firewall, and more. A complete guide to mastering Mikrotik RouterOS for home and small business networks.',
     date: '2025-11-10',
     image: '/src/assets/data/articles-pictures/arch-linux.jpg',
-    iconName: 'network'
+    iconName: 'hardware'
   },
   // Add more articles here easily...
 ]
